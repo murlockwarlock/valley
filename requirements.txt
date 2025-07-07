@@ -1,0 +1,9 @@
+pandas
+openpyxl
+fake-useragent
+colorama
+eth-account
+pytz
+playwright
+cloudscraper
+httpx
