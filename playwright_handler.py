@@ -127,7 +127,7 @@ class ValleyGuardianBrowser:
         if not await self._goto_with_retries("https://valleyofguardians.xyz/"):
             return False
 
-        # Выполняем API-запрос на логин, как в loginAPI.txt
+        # Выполняем API-запрос на логин
         url = f"{self.config['base_url']}/auth/v1/token?grant_type=password"
         payload = {"email": self.account['email'], "password": self.account['password']}
         headers = {'apikey': self.config['api_key'], 'Content-Type': 'application/json'}
